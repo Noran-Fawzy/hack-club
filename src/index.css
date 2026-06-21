@@ -1,0 +1,107 @@
+:root {
+    --bg-primary: #07122b;
+    --bg-secondary: #0d1838;
+    --bg-card: #111f47;
+
+    --text-primary: #ffffff;
+    --text-secondary: #b8c1d9;
+
+    --accent-red: #ff3b5c;
+    --accent-cyan: #19e6c1;
+    --accent-blue: #1f6fff;
+
+    --border-color: #24345f;
+
+    --container-width: 1200px;
+    --transition: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.title-red {
+    color: var(--accent-red);
+}
+
+.btn-main {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-weight: 600;
+}
+
+.btn-main:hover {
+    opacity: 0.9;
+}
+
+.btn-outline-green {
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    background: transparent;
+    padding: 12px 28px;
+}
+
+.card-dark {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+.navbar {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-red) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.custom-navbar {
+    border-bottom: 2px solid var(--border-color);
+    background-color: var(--bg-primary);
+}
+
+.join-btn {
+    background-color: var(--accent-red);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 10px 24px;
+    transition: var(--transition);
+}
+
+.join-btn:hover {
+    opacity: 0.9;
+}
+
+.divider {
+    border-top: 2px solid var(--border-color);
+    margin: 50px 0;
+    
+}

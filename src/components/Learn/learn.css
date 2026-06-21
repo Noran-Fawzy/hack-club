@@ -1,0 +1,50 @@
+.text-red {
+    color: var(--accent-red);
+}
+
+.small-title {
+    color: var(--accent-red);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.learn-text {
+    line-height: 1.8;
+}
+
+.step-box {
+    border: 2px solid #111;
+    background: var(--bg-secondary);
+    padding: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.step-box span {
+    color: var(--accent-red);
+    margin-right: 12px;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.learn-img {
+    border: 3px solid #111;
+    width: 100%;
+    object-fit: cover;
+}
+
+.large-img {
+    margin-top: 40px;
+}
+
+.community-btn {
+    background: var(--accent-red);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding:2px 2px;
+    font-weight: 700;
+    transform: rotate(3deg);
+    pointer-events: none;
+}

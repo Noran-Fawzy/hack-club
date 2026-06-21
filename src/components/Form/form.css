@@ -1,0 +1,43 @@
+.join-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    max-width: 850px;
+    width: 100%;
+    transform: rotate(-2deg);
+}
+
+.join-title {
+    color: var(--accent-red);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.custom-label {
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.custom-input {
+    border-radius: 0 !important;
+    border: none !important;
+    background: #f1f1f1 !important;
+}
+
+.custom-input:focus {
+    box-shadow: none !important;
+}
+
+.join-submit {
+    width: 100%;
+    border: none;
+    background: var(--accent-red);
+    color: white;
+    padding: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.join-submit:hover {
+    opacity: 0.9;
+}
