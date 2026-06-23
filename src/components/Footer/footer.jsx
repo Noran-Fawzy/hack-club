@@ -1,4 +1,5 @@
 import "./footer.css";
+import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -25,9 +26,31 @@ function Footer() {
 
         <div className="footer-contact">
           <h4>Contact</h4>
-          <p>📍 Egypt, Sharkia, Abu-hammad</p>
-          <p>📧 hackclub@email.com</p>
-          <p>📱 +20 000 000 000</p>
+          <p>
+            <FaMapMarkerAlt />{" "}
+            <a
+              href="https://maps.google.com/?q=Abu-Hammad,Sharkia,Egypt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Abu-Hammad, Sharkia, Egypt
+            </a>
+          </p>
+          <p>
+            <FaWhatsapp />{" "}
+            <a
+              href="https://wa.me/201060822030"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              +20 106 082 2030
+            </a>
+          </p>
+
+          <p>
+            <FaEnvelope />{" "}
+            <a href="mailto:hackclub00@gmail.com"> hackclub00@gmail.com</a>
+          </p>
         </div>
       </div>
 

@@ -1,10 +1,10 @@
 import "./about.css";
+import { FaLaptop, FaFolderOpen, FaUsers, FaGlobe } from "react-icons/fa";
 
 function About() {
   return (
     <section id="about" className="section">
       <div className="container">
-
         <div className="text-center mb-5">
           <p className="small-title">LOCAL_COMMUNITY // ACTIVE</p>
 
@@ -18,15 +18,14 @@ function About() {
         </div>
 
         <div className="about-box">
-
           <div className="about-content">
-            <h3 className="about-heading">
-              Abu-Hammad Hack Club
-            </h3>
+            <h3 className="about-heading">Abu-Hammad Hack Club</h3>
 
             <p>
-              Abu-Hammad Hack Club is a student-led coding community based in Abu-Hammad, Sharkia. <br />
-              Our mission is to introduce children and teenagers to the world of programming, technology, and digital creativity.
+              Abu-Hammad Hack Club is a student-led coding community based in
+              Abu-Hammad, Sharkia. <br />
+              Our mission is to introduce children and teenagers to the world of
+              programming, technology, and digital creativity.
             </p>
 
             <p>
@@ -42,30 +41,35 @@ function About() {
 
             <div className="about-stats">
               <div className="stat-card">
-                <h4>💻</h4>
+                <h4>
+                  <FaLaptop />
+                </h4>
                 <p>Coding</p>
               </div>
 
               <div className="stat-card">
-                <h4>🚀</h4>
+                <h4>
+                  <FaFolderOpen />
+                </h4>
                 <p>Projects</p>
               </div>
 
               <div className="stat-card">
-                <h4>🤝</h4>
+                <h4>
+                  <FaUsers />
+                </h4>
                 <p>Community</p>
               </div>
 
               <div className="stat-card">
-                <h4>🌍</h4>
+                <h4>
+                  <FaGlobe />
+                </h4>
                 <p>Impact</p>
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
 
       <div className="divider"></div>

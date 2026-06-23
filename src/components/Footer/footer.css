@@ -15,6 +15,11 @@
     margin-bottom: 10px;
 }
 
+.footer-contact a{
+    color: #aaa;
+    text-decoration: none;
+}
+
 .footer h3 span{
     color: var(--accent-red);
 }
