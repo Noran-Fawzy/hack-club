@@ -30,7 +30,10 @@ function Hero() {
                 START HERE
               </a>
 
-              <button className="btn-outline-green">LEARN MORE</button>
+              <a href="#about">
+                {" "}
+                <button className="btn-outline-green">LEARN MORE</button>{" "}
+              </a>
             </div>
           </div>
 

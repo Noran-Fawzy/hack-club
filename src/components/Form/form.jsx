@@ -7,34 +7,37 @@ function Form() {
   const [phone, setPhone] = useState("");
   const [whyJoin, setWhyJoin] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+ const handleSubmit = async (e) => {
+   e.preventDefault();
 
-    await fetch(
-      "https://script.google.com/macros/s/AKfycbwL7NLYHjf2PRLBGwiOIKZ0qDSIvtflBvBPvavOMo3Q6IjY5X0J8NeISre26zWnMvKQLg/exec",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          parentName,
-          age,
-          phone,
-          whyJoin,
-        }),
-      },
-    );
+   const formData = new FormData();
 
-    alert("Application submitted successfully!");
+   formData.append("parentName", parentName);
+   formData.append("age", age);
+   formData.append("phone", phone);
+   formData.append("whyJoin", whyJoin);
 
-    // optional reset
-    setParentName("");
-    setAge("");
-    setPhone("");
-    setWhyJoin("");
-  };
+   try {
+     await fetch(
+       "https://script.google.com/macros/s/AKfycbx0k-z7YK5WZ3oLh429_2h5Df_5rfPD-NMlqXsbjIq4l8yN0JFpIwvgVjOFifJjLFz_/exec",
+       {
+         method: "POST",
+         body: formData,
+         mode: "no-cors",
+       },
+     );
 
+     alert("Application submitted successfully!");
+
+     setParentName("");
+     setAge("");
+     setPhone("");
+     setWhyJoin("");
+   } catch (error) {
+     console.error(error);
+     alert("Submission failed");
+   }
+ };
   return (
     <section id="join" className="section">
       <div className="container">

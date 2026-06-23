@@ -22,13 +22,13 @@ function Navbar() {
           <ul className="navbar-nav gap-lg-4">
             <li className="nav-item">
               <a className="nav-link" href="#about">
-                ABOUT
+                About
               </a>
             </li>
 
             <li className="nav-item">
               <a className="nav-link" href="#learn">
-                LEARN
+                Learn
               </a>
             </li>
 
