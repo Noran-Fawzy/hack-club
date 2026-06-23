@@ -6,9 +6,6 @@ import Projects from "./components/Projects/projects";
 import Form from "./components/Form/form";
 import Footer from "./components/Footer/footer";
 
-
-
-
 function App() {
   return (
     <div>

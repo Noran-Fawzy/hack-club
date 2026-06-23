@@ -1,6 +1,14 @@
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark custom-navbar py-4">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark custom-navbar py-4"
+      style={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        backgroundColor: "#07122b",
+      }}
+    >
       <div className="container">
         <a className="navbar-brand fw-bold fs-3 text-danger" href="#">
           ABU-HAMMAD HACK CLUB

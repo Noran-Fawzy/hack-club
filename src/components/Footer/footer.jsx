@@ -17,7 +17,6 @@ function Footer() {
 
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <a href="#home">Home</a>
           <a href="#join">Apply</a>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
