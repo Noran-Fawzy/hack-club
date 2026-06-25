@@ -30,7 +30,6 @@ function Footer() {
 
           <a href="/#projects">Projects</a>
 
-         
         </div>
 
         <div className="footer-contact">
@@ -60,8 +59,8 @@ function Footer() {
 
           <p>
             <FaEnvelope />{" "}
-            <a href="mailto:hackclub00@gmail.com">
-              hackclub00@gmail.com
+            <a href="mailto:support@abuhammadhackacademy.com">
+              support@abuhammadhackacademy.com
             </a>
           </p>
         </div>
