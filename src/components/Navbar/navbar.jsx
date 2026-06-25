@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav
@@ -10,9 +12,9 @@ function Navbar() {
       }}
     >
       <div className="container">
-        <a className="navbar-brand fw-bold fs-3 text-danger" href="#">
-          ABU-HAMMAD HACK CLUB
-        </a>
+       <Link className="navbar-brand fw-bold fs-3 text-danger" to="/">
+  ABU-HAMMAD HACK CLUB
+</Link>
 
         <button
           className="navbar-toggler"
@@ -28,29 +30,33 @@ function Navbar() {
           id="navbarNav"
         >
           <ul className="navbar-nav gap-lg-4">
-            <li className="nav-item">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
+ <li className="nav-item">
+    <Link className="nav-link" to="/">
+      Home
+    </Link>
+  </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#learn">
-                Learn
-              </a>
+          <Link className="nav-link" to="/about">
+  About
+</Link>
             </li>
 
+            <a className="nav-link" href="/#learn">
+  Learn
+</a>
+
             <li className="nav-item">
-              <a className="nav-link" href="#projects">
-                Projects
-              </a>
+            <a className="nav-link" href="/#projects">
+  Projects
+</a>
             </li>
           </ul>
         </div>
 
-        <a href="#join" className="join-btn text-decoration-none">
-          JOIN SPACE
-        </a>
+       <a href="/#join" className="join-btn text-decoration-none">
+  JOIN SPACE
+</a>
       </div>
     </nav>
   );

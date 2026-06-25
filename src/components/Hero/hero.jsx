@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Hero() {
   return (
     <section className="section">
@@ -30,10 +32,9 @@ function Hero() {
                 START HERE
               </a>
 
-              <a href="#about">
-                {" "}
+             <Link className="nav-link" to="/about">
                 <button className="btn-outline-green">LEARN MORE</button>{" "}
-              </a>
+             </Link>
             </div>
           </div>
 

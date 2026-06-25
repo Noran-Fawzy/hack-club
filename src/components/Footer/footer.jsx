@@ -1,5 +1,6 @@
 import "./footer.css";
 import { FaWhatsapp, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -7,24 +8,34 @@ function Footer() {
       <div className="container footer-content">
         <div className="footer-left">
           <h3>
-            {" "}
             <span>Abu-Hammad </span>Hack Club
           </h3>
+
           <p>
-            Building future developers through learning, coding, and innovation.
+            Building future developers through learning, coding, and
+            innovation.
           </p>
         </div>
 
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <a href="#join">Apply</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#learn">Learn</a>
+
+ <Link to="/">Home</Link>
+
+          <a href="/#join">Apply</a>
+
+          <Link to="/about">About</Link>
+
+          <a href="/#learn">Learn</a>
+
+          <a href="/#projects">Projects</a>
+
+         
         </div>
 
         <div className="footer-contact">
           <h4>Contact</h4>
+
           <p>
             <FaMapMarkerAlt />{" "}
             <a
@@ -35,6 +46,7 @@ function Footer() {
               Abu-Hammad, Sharkia, Egypt
             </a>
           </p>
+
           <p>
             <FaWhatsapp />{" "}
             <a
@@ -48,13 +60,16 @@ function Footer() {
 
           <p>
             <FaEnvelope />{" "}
-            <a href="mailto:hackclub00@gmail.com"> hackclub00@gmail.com</a>
+            <a href="mailto:hackclub00@gmail.com">
+              hackclub00@gmail.com
+            </a>
           </p>
         </div>
       </div>
 
       <div className="footer-bottom">
         <div className="divider"></div>
+
         <p>
           © {new Date().getFullYear()} Abu-Hammad Hack Club. All rights
           reserved.

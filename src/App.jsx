@@ -1,22 +1,33 @@
+import { Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar/navbar";
 import Hero from "./components/Hero/hero";
 import Learn from "./components/Learn/learn";
-import About from "./components/About/about";
 import Projects from "./components/Projects/projects";
 import Form from "./components/Form/form";
 import Footer from "./components/Footer/footer";
+import AboutPage from "./components/AboutPage";
 
-function App() {
+function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <Learn />
-      <About />
       <Projects />
       <Form />
       <Footer />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<AboutPage />} />
+      
+    </Routes>
   );
 }
 

@@ -2,80 +2,114 @@ import "./about.css";
 import { FaLaptop, FaFolderOpen, FaUsers, FaGlobe } from "react-icons/fa";
 
 function About() {
-  return (
-    <section id="about" className="section">
-      <div className="container">
-        <div className="text-center mb-5">
-          <p className="small-title">LOCAL_COMMUNITY // ACTIVE</p>
+return ( <section id="about" className="section"> <div className="container"> <div className="text-center mb-5"> <p className="small-title">LOCAL_COMMUNITY // ACTIVE</p>
 
-          <h2 className="fw-bold display-5">
-            About <span className="title-red">Hack Club</span>
-          </h2>
 
-          <p className="text-secondary">
-            Empowering the next generation through technology and creativity.
-          </p>
-        </div>
+      <h2 className="fw-bold display-5">
+        About <span className="title-red">Hack Club</span>
+      </h2>
 
-        <div className="about-box">
-          <div className="about-content">
-            <h3 className="about-heading">Abu-Hammad Hack Club</h3>
+      <p className="text-secondary">
+        بنبني مجتمع تقني يساعد الشباب يتعلموا ويبدعوا ويصنعوا مستقبلهم بالتكنولوجيا
+      </p>
+    </div>
 
-            <p>
-              Abu-Hammad Hack Club is a student-led coding community based in
-              Abu-Hammad, Sharkia. <br />
-              Our mission is to introduce children and teenagers to the world of
-              programming, technology, and digital creativity.
-            </p>
+    <div className="about-box">
+      <div className="about-content">
+        <h3 className="about-heading">Abu-Hammad Hack Club</h3>
 
-            <p>
-              Through workshops, hands-on projects, and collaborative learning,
-              members gain practical skills in web development, problem solving,
-              design, and modern technologies.
-            </p>
+        <p>
+         هو مجتمع شبابي وتعليمي اتأسس بهدف نشر
+          ثقافة البرمجة والتكنولوجيا بين الطلاب والشباب في مدينة أبو
+          حماد<br /> 
+          بنسعى إننا نوفر مكان يجمع المهتمين بالتكنولوجيا في بيئة
+          تعليمية ممتعة تساعدهم يتعلموا ويطوروا مهاراتهم ويكتشفوا
+          قدراتهم الحقيقية
+        </p>
 
-            <p>
-              We believe every student should have the opportunity to learn,
-              create, and innovate regardless of their previous experience.
-            </p>
+        <p>
+          إحنا مؤمنين إن التكنولوجيا بقت جزء أساسي من المستقبل، وإن كل
+          طالب عنده الحق إنه يتعلم المهارات اللي تساعده يواكب التطور
+          ويصنع فرص جديدة لنفسه <br />
+           علشان كده بنقدم محتوى تعليمي مبسط
+          يناسب المبتدئين، ونساعد الأعضاء خطوة بخطوة في رحلتهم لتعلم
+          البرمجة وتطوير المواقع والتفكير المنطقي وحل المشكلات
+        </p>
 
-            <div className="about-stats">
-              <div className="stat-card">
-                <h4>
-                  <FaLaptop />
-                </h4>
-                <p>Coding</p>
-              </div>
+        <p>
+          من خلال المحاضرات التفاعلية وورش العمل والتطبيقات العملية،
+          بيتعلم الأعضاء إزاي يحولوا الأفكار لمشاريع حقيقية <br /> 
+          إحنا مش
+          بنركز على الجانب النظري بس، لكن بنشجع على التطبيق العملي
+          وبناء المشاريع واكتساب الخبرة من خلال التجربة والعمل الجماعي
+        </p>
 
-              <div className="stat-card">
-                <h4>
-                  <FaFolderOpen />
-                </h4>
-                <p>Projects</p>
-              </div>
+        <p>
+          خلال الموسم الأول من النادي قدرنا نقدم 17 محاضرة تعليمية و3
+          ورش عمل وأكثر من 20 مهمة وتطبيق عملي، بهدف بناء أساس قوي في
+          مجال تطوير الويب ومساعدة المشاركين على فهم أساسيات تصميم
+          وتطوير المواقع الإلكترونية بشكل احترافي
+        </p>
 
-              <div className="stat-card">
-                <h4>
-                  <FaUsers />
-                </h4>
-                <p>Community</p>
-              </div>
+        <p>
+          النادي مش مجرد مكان لتعلم البرمجة، لكنه مجتمع بيشجع على
+          التعاون وتبادل الخبرات وتكوين صداقات جديدة بين الشباب اللي
+          عندهم نفس الشغف
+          <br /> بنحاول دايمًا نوفر بيئة إيجابية وداعمة تخلي
+          كل عضو يشارك أفكاره ويسأل ويتعلم من غير خوف أو تردد
+        </p>
 
-              <div className="stat-card">
-                <h4>
-                  <FaGlobe />
-                </h4>
-                <p>Impact</p>
-              </div>
-            </div>
+        <p>
+          هدفنا إننا نساهم في بناء جيل قادر على الابتكار والإبداع
+          واستخدام التكنولوجيا بشكل مفيد يخدم المجتمع <br /> وبنطمح إن
+          Abu-Hammad Hack Club يكون نقطة بداية لكل شاب أو طالبة عايزين
+          يدخلوا عالم التكنولوجيا ويبنوا مستقبلهم بإيديهم
+        </p>
+
+        <p>
+          سواء كنت لسه بتبدأ أول خطوة في البرمجة أو عندك خبرة وعايز
+          تطور نفسك، هتلاقي هنا مجتمع يساندك ويشجعك على التعلم المستمر
+          وتحقيق أهدافك رحلتنا لسه في بدايتها، ومستمرين في تقديم
+          محتوى أقوى وفرص أكتر لكل شخص عنده شغف بالتكنولوجيا والتعلم
+        </p>
+
+        <div className="about-stats">
+          <div className="stat-card">
+            <h4>
+              <FaLaptop />
+            </h4>
+            <p>Programming</p>
+          </div>
+
+          <div className="stat-card">
+            <h4>
+              <FaFolderOpen />
+            </h4>
+            <p>Projects</p>
+          </div>
+
+          <div className="stat-card">
+            <h4>
+              <FaUsers />
+            </h4>
+            <p>Community</p>
+          </div>
+
+          <div className="stat-card">
+            <h4>
+              <FaGlobe />
+            </h4>
+            <p>Impact</p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div className="divider"></div>
-    </section>
-  );
+  <div className="divider"></div>
+</section>
+
+);
 }
 
 export default About;
-

@@ -27,7 +27,7 @@ function Form() {
        },
      );
 
-     alert("Application submitted successfully!");
+     alert("Application submitted successfully");
 
      setParentName("");
      setAge("");
@@ -65,7 +65,7 @@ function Form() {
                   <input
                     type="text"
                     className="form-control custom-input"
-                    placeholder="Entry required..."
+                    placeholder="Enter Your Name..."
                     value={parentName}
                     onChange={(e) => setParentName(e.target.value)}
                     required
@@ -77,7 +77,7 @@ function Form() {
                   <input
                     type="number"
                     className="form-control custom-input"
-                    placeholder="Enter age..."
+                    placeholder="Enter Your Age..."
                     value={age}
                     onChange={(e) => setAge(e.target.value)}
                     required
@@ -91,7 +91,7 @@ function Form() {
                   <input
                     type="text"
                     className="form-control custom-input"
-                    placeholder="+20..."
+                    placeholder="01..."
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     required

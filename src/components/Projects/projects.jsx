@@ -59,6 +59,16 @@ function Projects() {
       title: "Cats",
       link: "https://ahmedhasssaan.github.io/ahmed-website/",
     },
+    {
+      image: "/project11.png",
+      title: "Films",
+      link: "https://mahmoud0101-ai.github.io/toppings-final/",
+    },
+    {
+      image: "/project12.png",
+      title: "Characters",
+      link: "https://abdelrahmanmohamed1552008-cell.github.io/Toppings-final/",
+    },
   ];
 
   return (
