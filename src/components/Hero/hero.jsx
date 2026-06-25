@@ -39,7 +39,7 @@ function Hero() {
 
           <div className="col-lg-5 mt-5 mt-lg-0">
             <div className="card-dark p-3">
-              <img src="/hero.png" className="img-fluid" alt="Hero" />{" "}
+              <img src="/learn5.png" className="img-fluid" alt="Hero" />{" "}
             </div>
           </div>
         </div>

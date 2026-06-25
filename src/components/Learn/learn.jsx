@@ -41,10 +41,18 @@ function Learn() {
           <div className="col-lg-7">
             <div className="row g-3">
               <div className="col-md-6">
-                <img src="/learn5.png" className="img-fluid learn-img" alt="" />
+                <img src="/learn3.png" className="img-fluid learn-img" alt="" />
               </div>
 
               <div className="col-md-6">
+                <img
+                  src="/learn4.png"
+                  className="img-fluid learn-img large-img"
+                  alt=""
+                />
+              </div>
+
+                <div className="col-md-6">
                 <img
                   src="/learn2.png"
                   className="img-fluid learn-img large-img"
