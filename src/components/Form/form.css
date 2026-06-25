@@ -41,3 +41,17 @@
 .join-submit:hover {
     opacity: 0.9;
 }
+
+.track-description {
+margin-top: 12px;
+padding: 12px;
+border-left: 3px solid #dc3545;
+background: rgba(255, 255, 255, 0.05);
+color: #ccc;
+border-radius: 8px;
+font-size: 0.95rem;
+line-height: 1.8;
+direction: rtl;
+text-align: right;
+unicode-bidi: plaintext;
+}
