@@ -8,9 +8,12 @@ import Form from "./components/Form/form";
 import Footer from "./components/Footer/footer";
 import AboutPage from "./components/AboutPage";
 
+import Analytics from "./Analytics";
+
 function Home() {
   return (
     <>
+       <Analytics />
       <Navbar />
       <Hero />
       <Learn />
