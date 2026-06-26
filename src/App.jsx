@@ -8,12 +8,9 @@ import Form from "./components/Form/form";
 import Footer from "./components/Footer/footer";
 import AboutPage from "./components/AboutPage";
 
-import Analytics from "./Analytics";
-
 function Home() {
   return (
     <>
-       <Analytics />
       <Navbar />
       <Hero />
       <Learn />
@@ -26,11 +23,14 @@ function Home() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<AboutPage />} />
-      
-    </Routes>
+    <>
+     
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </>
   );
 }
 
