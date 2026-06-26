@@ -129,21 +129,6 @@ function Form() {
                 </div>
 
                 <div className="col-12">
-                  <label className="form-label custom-label">
-                      WHY_DO_YOU_WANT_TO_JOIN?
-                  </label>
-
-                  <textarea
-                    rows="4"
-                    className="form-control custom-input"
-                    placeholder="اكتب إزاي هتسيب بصمتك في النادي..."
-                    value={whyJoin}
-                    onChange={(e) => setWhyJoin(e.target.value)}
-                    required
-                  />
-                </div>
-
-                <div className="col-12">
                   <hr className="mt-3" />
 
                   <button
