@@ -136,7 +136,7 @@ function Form() {
                   <textarea
                     rows="4"
                     className="form-control custom-input"
-                    placeholder="اكتب سبب رغبتك في الانضمام..."
+                    placeholder="اكتب إزاي هتسيب بصمتك في النادي..."
                     value={whyJoin}
                     onChange={(e) => setWhyJoin(e.target.value)}
                     required
