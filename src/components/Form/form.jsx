@@ -2,8 +2,8 @@ import "./form.css";
 import { useState } from "react";
 
 function Form() {
-  const [track, setTrack] = useState("");
   const [parentName, setParentName] = useState("");
+  const [nationalId, setNationalId] = useState("");
   const [age, setAge] = useState("");
   const [phone, setPhone] = useState("");
   const [whyJoin, setWhyJoin] = useState("");
@@ -13,12 +13,11 @@ function Form() {
 
     const formData = new FormData();
 
-    formData.append("track", track);
     formData.append("parentName", parentName);
+    formData.append("nationalId", nationalId);
     formData.append("age", age);
     formData.append("phone", phone);
     formData.append("whyJoin", whyJoin);
-    formData.append("track", track);
 
     try {
       await fetch(
@@ -30,17 +29,16 @@ function Form() {
         }
       );
 
-      alert("Application submitted successfully");
+      alert("تم إرسال الطلب بنجاح");
 
-      setTrack("");
       setParentName("");
+      setNationalId("");
       setAge("");
       setPhone("");
       setWhyJoin("");
-      setTrack("");
     } catch (error) {
       console.error(error);
-      alert("Submission failed");
+      alert("حدث خطأ أثناء إرسال الطلب");
     }
   };
 
@@ -61,124 +59,100 @@ function Form() {
 
         <div className="d-flex justify-content-center">
           <div className="join-box">
-            <p className="join-title">INITIATE_APPLICATION_PROTOCOL</p>
+            <p className="join-title">
+              INITIATE_APPLICATION_PROTOCOL
+            </p>
+
             <hr />
 
             <form onSubmit={handleSubmit}>
               <div className="row g-4">
-                <div className="col-12">
+                <div className="col-md-6">
                   <label className="form-label custom-label">
-                    SELECT_TRACK
+                  YOUR_NAME
                   </label>
 
-                  <select
+                  <input
+                    type="text"
                     className="form-control custom-input"
-                    value={track}
-                    onChange={(e) => setTrack(e.target.value)}
+                    placeholder="اكتب اسمك..."
+                    value={parentName}
+                    onChange={(e) => setParentName(e.target.value)}
                     required
-                  >
-                    <option value="">Choose a Track...</option>
-                    <option value="Python">Python</option>
-                    <option value="Web Development">
-                      Web Development
-                    </option>
-                    <option value="Web Development Advanced">
-                      Web Development Advanced
-                    </option>
-                  </select>
-
-                  {track === "Python" && (
-                    <p className="track-description">
-                      هتتعلم أساسيات البرمجة بلغة Python، المتغيرات، الشروط،
-                      الحلقات، الدوال، وحل المشكلات البرمجية من خلال تطبيقات
-                      ومشاريع عملية.
-                    </p>
-                  )}
-
-                  {track === "Web Development" && (
-                    <p className="track-description">
-                      هتتعلم أساسيات تطوير الويب باستخدام HTML و CSS، وتصميم
-                      صفحات ومواقع احترافية متجاوبة مع جميع الأجهزة.
-                    </p>
-                  )}
-
-                  {track === "Web Development Advanced" && (
-                    <p className="track-description">
-                      هتتعلم JavaScript بشكل متقدم، والتعامل مع DOM و Events،
-                      وبناء مواقع تفاعلية أكثر احترافية وتنفيذ مشاريع عملية
-                      متقدمة.
-                    </p>
-                  )}
+                  />
                 </div>
 
-                {track && (
-                  <>
-                    <div className="col-md-6">
-                      <label className="form-label custom-label">
-                        YOUR_NAME
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control custom-input"
-                        placeholder="Enter Your Name..."
-                        value={parentName}
-                        onChange={(e) => setParentName(e.target.value)}
-                        required
-                      />
-                    </div>
+                <div className="col-md-6">
+                  <label className="form-label custom-label">
+                NATIONAL_ID     
+                  </label>
 
-                    <div className="col-md-6">
-                      <label className="form-label custom-label">AGE</label>
-                      <input
-                        type="number"
-                        className="form-control custom-input"
-                        placeholder="Enter Your Age..."
-                        value={age}
-                        onChange={(e) => setAge(e.target.value)}
-                        required
-                      />
-                    </div>
+                  <input
+                    type="text"
+                    className="form-control custom-input"
+                    placeholder="اكتب الرقم القومي (14 رقم)..."
+                    value={nationalId}
+                    onChange={(e) => setNationalId(e.target.value)}
+                    maxLength={14}
+                    required
+                  />
+                </div>
 
-                    <div className="col-md-6">
-                      <label className="form-label custom-label">
-                        PHONE_NUMBER
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control custom-input"
-                        placeholder="01..."
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        required
-                      />
-                    </div>
+                <div className="col-md-6">
+                  <label className="form-label custom-label">
+                  AGE  
+                  </label>
 
-                    <div className="col-12">
-                      <label className="form-label custom-label">
-                        WHY_DO_YOU_WANT_TO_JOIN?
-                      </label>
-                      <textarea
-                        rows="4"
-                        className="form-control custom-input"
-                        placeholder="Describe why you want to be a part..."
-                        value={whyJoin}
-                        onChange={(e) => setWhyJoin(e.target.value)}
-                        required
-                      />
-                    </div>
+                  <input
+                    type="number"
+                    className="form-control custom-input"
+                    placeholder="اكتب عمرك..."
+                    value={age}
+                    onChange={(e) => setAge(e.target.value)}
+                    required
+                  />
+                </div>
 
-                    <div className="col-12">
-                      <hr className="mt-3" />
+                <div className="col-md-6">
+                  <label className="form-label custom-label">
+                    PHONE_NUMBER 
+                  </label>
 
-                      <button
-                        type="submit"
-                        className="join-submit w-100"
-                      >
-                        INITIATE_HACK
-                      </button>
-                    </div>
-                  </>
-                )}
+                  <input
+                    type="text"
+                    className="form-control custom-input"
+                    placeholder="  ...01"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div className="col-12">
+                  <label className="form-label custom-label">
+                      WHY_DO_YOU_WANT_TO_JOIN?
+                  </label>
+
+                  <textarea
+                    rows="4"
+                    className="form-control custom-input"
+                    placeholder="اكتب سبب رغبتك في الانضمام..."
+                    value={whyJoin}
+                    onChange={(e) => setWhyJoin(e.target.value)}
+                    required
+                  />
+                </div>
+
+                <div className="col-12">
+                  <hr className="mt-3" />
+
+                  <button
+                    type="submit"
+                    className="join-submit w-100"
+                  >
+                  INITIATE_HACK
+                  </button>
+                </div>
               </div>
             </form>
           </div>

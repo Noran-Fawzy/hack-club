@@ -42,7 +42,7 @@
     opacity: 0.9;
 }
 
-.track-description {
+/* .track-description {
 margin-top: 12px;
 padding: 12px;
 border-left: 3px solid #dc3545;
@@ -54,4 +54,11 @@ line-height: 1.8;
 direction: rtl;
 text-align: right;
 unicode-bidi: plaintext;
+} */
+
+.custom-input,
+.custom-input::placeholder,
+textarea {
+    direction: rtl;
+    text-align: right;
 }
